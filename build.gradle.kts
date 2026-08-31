@@ -1,10 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id("org.springframework.boot") version "3.3.4"
+	id("org.springframework.boot") version "3.4.0"
 	id("io.spring.dependency-management") version "1.1.6"
-	kotlin("jvm") version "1.9.25"
-	kotlin("plugin.spring") version "1.9.25"
+	kotlin("jvm") version "2.4.0"
+	kotlin("plugin.spring") version "2.4.0"
 }
 
 group = "com.takamol"
@@ -37,12 +37,12 @@ dependencies {
 	}
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-	testImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
+	testImplementation("com.squareup.okhttp3:mockwebserver:5.5.0")
 
 	// Mockito Kotlin flavour
-	testImplementation("org.mockito:mockito-core:5.14.2")
-	testImplementation("org.mockito:mockito-junit-jupiter:5.14.2")
-	testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
+	testImplementation("org.mockito:mockito-core:5.23.0")
+	testImplementation("org.mockito:mockito-junit-jupiter:5.23.0")
+	testImplementation("org.mockito.kotlin:mockito-kotlin:6.3.0")
 
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
