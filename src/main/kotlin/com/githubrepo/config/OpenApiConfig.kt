@@ -19,6 +19,6 @@ class OpenApiConfig {
                         "their branches and the latest commit SHA on each branch."
                 )
                 .version("v1")
-                .contact(Contact().name("Takamol"))
+                .contact(Contact().name("Oleksandr"))
         )
 }
